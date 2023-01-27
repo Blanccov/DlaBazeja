@@ -1,0 +1,397 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#container {
+    height: 200vh;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-image: url("baner.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+#pojemnik{
+	height: 40vh;
+    width: 100%;
+	background-image: url("pojemnik.jpg");
+	background-position: bottom;
+}
+
+#obraz{
+	height: 100vh;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-image: url("kot.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+#logo1{
+    font-size:calc(20px + 2.5vw);
+	text-transform: uppercase;
+	font-family: 'Gambetta', serif;
+	letter-spacing: -3px;
+	transition: 700ms ease;
+	font-variation-settings: "wght" 311;
+	margin-bottom: 0.8rem;
+	color: PaleGoldenRod;
+	outline: none;
+	text-align: center;
+}
+
+#logo1:hover{
+  font-variation-settings: "wght" 582; 
+  letter-spacing: 1px;
+}
+
+#logo2{
+    font-size:calc(20px + 2.5vw);
+	text-transform: uppercase;
+	font-family: 'Gambetta', serif;
+	letter-spacing: -3px;
+	transition: 700ms ease;
+	font-variation-settings: "wght" 311;
+	margin-bottom: 0.8rem;
+	color: PaleGoldenRod;
+	outline: none;
+	text-align: center;
+    padding: 20px;
+}
+
+#logo2:hover{
+  font-variation-settings: "wght" 582; 
+  letter-spacing: 1px;
+}
+
+
+#image{
+	display: flex;
+}
+
+#socialLinks {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    top: 20%;
+    flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#socialLinks a {
+    text-decoration: none;
+    padding: .5rem;
+    color: black;
+}
+
+
+.nav-links{
+    width: 250px;
+    height: 150px;
+    margin: auto 0 20px;
+    background: PaleGoldenRod;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    border-radius: 10px;
+	text-align: center;
+	font-family: 'Gambetta', serif;
+	transition: transform 0.5s;
+}
+
+#socialLinks a i:hover {
+    background: transparent;
+    color: white;
+    border: 2px solid PaleGoldenRod;
+	font-weight: 600;
+	transform: scale(1.1);
+}
+
+#socialLinks a i{
+   font-size: calc(20px + .75vw);
+}
+
+
+
+#music1 {
+    background: PaleGoldenRod;
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    bottom: 10px;
+    right: 20%;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+    border: 2px solid black;
+    animation: animate1 20s ease-in-out infinite;
+}
+
+@keyframes animate1 {
+    0%,100% {
+background: rgb(238,232,170);
+background: radial-gradient(circle, rgba(238,232,170,1) 3%, rgba(0,0,0,1) 70%);
+        right: 95%;
+    }
+
+    50% {
+background: rgb(214,22,56);
+background: radial-gradient(circle, rgba(214,22,56,1) 3%, rgba(0,0,0,1) 80%);
+        right: 5%;
+    }
+}
+
+#music1 button:hover {
+    color: transparent;
+    border: 1px inset black;
+    background: transparent;	
+}
+
+#music2 {
+    background: PaleGoldenRod;
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    bottom: 10px;
+    right: 20%;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+    border: 2px solid black;
+    animation: animate2 20s ease-in-out infinite;
+}
+
+
+
+@keyframes animate2 {
+    0%,100% {
+background: rgb(238,232,170);
+background: radial-gradient(circle, rgba(238,232,170,1) 3%, rgba(0,0,0,1) 70%);
+        right: 5%;
+    }
+
+    50% {
+background: rgb(22,27,214);
+background: radial-gradient(circle, rgba(22,27,214,1) 3%, rgba(0,0,0,1) 80%);
+        right: 95%;
+    }
+}
+
+#papier {
+    background: black;
+    opacity: 0.8; 
+	background-size: cover;
+    max-width: 1200px;
+    max-height: 1500px;
+	padding:4rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+
+
+#tekstwprowadzenia{
+	width: 100%;
+	height: 780px;
+	resize: none;
+	font-family: 'Gambetta', serif;
+	font-size: calc(15px + 1vw);
+	background-color: transparent;
+	border: 1px inset transparent;
+	font-weight: bolder;
+    color: palegoldenrod;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px transparent;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: PaleGoldenRod;
+  border-radius: 10px;
+}
+
+
+#reklama1{
+	background-image: url("Rudy.gif"); 
+	width: 600px;
+    height: 200px;
+	transition: transform 0.5s;
+}
+
+#reklama1:hover{
+    transform: scale(1.1);
+}
+
+#reklama2{
+	background-image: url("Kaprysy.gif"); 
+	width: 600px;
+    height: 200px;
+	transition: transform 0.5s;
+}
+
+#reklama2:hover{
+    transform: scale(1.1);
+}
+
+#reklama3{
+	background-image: url("Gdyby.gif"); 
+	width: 600px;
+    height: 200px;
+	transition: transform 0.5s;
+}
+
+#reklama3:hover{
+    transform: scale(1.1);
+}
+
+#reklamy{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 8rem;
+    margin: 2rem;
+    overflow: hidden;
+}
+
+
+#media {
+    position: relative;
+    top: 75%;
+    right: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+#media a {
+    text-decoration: none;
+    margin: 12px 0;
+	position: relative;
+	text-align: center;
+}
+
+#media a {
+    height: 60px;
+    width: 100px;
+    margin: auto 0 20px;
+    font-size: 20px;
+	font-weight: 600;
+    color: white;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+	text-align: center;
+	font-family: 'Gambetta', serif;
+	transition: transform 0.5s;
+}
+
+#media a i{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+#media a i:hover {
+    background: transparent;
+    color: PaleGoldenRod;
+    border: 2px solid PaleGoldenRod;
+	font-weight: 600;
+	letter-spacing: 1px;
+	transform: scale(1.1);
+}
+
+.media1{
+background: rgb(34,179,195);
+background: linear-gradient(0deg, rgba(34,179,195,1) 0%, rgba(0,69,167,1) 100%);	
+}
+
+
+.media2{
+background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.media3{
+background-color:red;	
+}
+
+
+
+#historia{
+	width: 1500px;
+	height: 1600px;
+	resize: none;
+	font-family: 'Gambetta', serif;
+	padding: 1.5rem;
+	font-size:calc(10px + 1.5vw);
+	background: rgb(219,219,219);
+background: radial-gradient(circle, rgba(219,219,219,1) 88%, rgba(0,0,0,1) 100%);
+	border: 3px inset transparent;
+	font-weight: bolder;
+	border-radius: 50px;
+    margin: 20px;
+}
+
+#tlo1{
+	height: 200vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    top: 0;
+    left: 0;
+    background-image: url("baner.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+
+#kulk1 {
+    background: PaleGoldenRod;
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    bottom: 10px;
+    left:2%;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+    border: 2px solid black;
+    animation: animatekulk1 60s ease-in-out infinite;
+}
+
+@keyframes animatekulk1 {
+    0%,100% {
+        background: rgb(238,232,170);
+        background: radial-gradient(circle, rgba(238,232,170,1) 3%, rgba(0,0,0,1) 70%);
+        right: 20%;
+        top: 10px;
+    }
+
+    50% {
+        background: rgb(214,22,56);
+        background: radial-gradient(circle, rgba(214,22,56,1) 3%, rgba(0,0,0,1) 80%);
+        right: 20%;
+        top: 1850px;
+    }
+}
+
+
+
